@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv').config();
+const clothingRoutes = require('./routes/clothing');
+app.use('/clothing', clothingRoutes);
 
 const authRoutes = require('./routes/auth');
 
